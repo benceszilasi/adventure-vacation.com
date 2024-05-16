@@ -1,0 +1,5 @@
+go to folder
+Bence\AM\Website\0_own coded page
+
+enter
+npm run compile:sass

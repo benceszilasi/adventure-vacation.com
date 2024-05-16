@@ -1,0 +1,23 @@
+.heading-h1{
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+}
+
+.heading-h1-main{
+    text-transform: uppercase;
+    display: block; /*block elements under each other*/
+    font-size: 60px;
+    letter-spacing: 20px;
+
+    @include respond(phone){
+        font-size: 50%;
+    }
+}
+
+.heading-h1-sub{
+    display: block; /*block elements under each other*/
+}

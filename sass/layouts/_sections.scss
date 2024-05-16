@@ -1,0 +1,13 @@
+.section-intro{
+    padding: 0 0 1000px 0;
+}
+
+.section-stays {
+    background-color: $color-grey-light-1;
+    padding: 25rem 1em 15rem 1em;
+    margin-top: -10rem;
+
+    @include respond(tab-port) {
+        padding: 20rem 0 10rem 0;
+    }
+}
