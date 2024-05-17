@@ -1,0 +1,32 @@
+swiper-container {
+    width: 600px;
+    height: auto;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -20%);
+    
+    @include respond(tab-port){
+        width: 550px;
+    }
+
+    @include respond(phone){
+        width: 90%;
+    }
+
+}
+
+swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+.swipe-box-heading {
+    padding: 1em 0 1em 0;
+    width: 100vw;
+}

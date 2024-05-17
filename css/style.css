@@ -43,7 +43,7 @@ body {
       padding: 40px; } }
 
 .heading-h1 {
-  color: #fff;
+  color: white;
   position: absolute;
   top: 40%;
   left: 50%;
@@ -64,14 +64,26 @@ body {
   display: block;
   /*block elements under each other*/ }
 
+.swipe-box-heading-text {
+  color: white; }
+
+.swipe-box-text {
+  color: white; }
+
 .header {
   height: 80vh;
-  background-image: linear-gradient(to bottom, rgba(100, 100, 100, 0.4), rgba(100, 100, 100, 0.4)), url(../img/Ptitigliano_Italy_medieval_town.png);
+  background-image: linear-gradient(to bottom, rgba(100, 100, 100, 0.5), rgba(100, 100, 100, 0.5)), url(../img/pitigliano/cover.png);
   background-size: cover;
   background-position: center top;
   background-attachment: fixed;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   position: relative; }
+  @media only screen and (max-width: 56.25em) {
+    .header {
+      background-image: linear-gradient(to bottom, rgba(100, 100, 100, 0.5), rgba(100, 100, 100, 0.5)), url(../img/pitigliano/cover_tablet.png); } }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      background-image: linear-gradient(to bottom, rgba(100, 100, 100, 0.5), rgba(100, 100, 100, 0.5)), url(../img/pitigliano/cover_phone.png); } }
 
 .logo-box {
   position: absolute;
@@ -82,7 +94,7 @@ body {
   height: 60px; }
 
 .section-intro {
-  padding: 0 0 1000px 0; }
+  padding: 0 0 100px 0; }
 
 .section-stays {
   background-color: grey;
@@ -91,6 +103,11 @@ body {
   @media only screen and (max-width: 56.25em) {
     .section-stays {
       padding: 20rem 0 10rem 0; } }
+
+.section-activities {
+  background-color: grey;
+  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+  padding: 20em 0 0 0; }
 
 .row {
   max-width: 114rem;
@@ -111,7 +128,7 @@ body {
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
-      margin-right: 6rem; }
+      margin-right: 2vw; }
       @media only screen and (max-width: 56.25em) {
         .row [class^="col-"]:not(:last-child) {
           margin-right: 0;
@@ -120,25 +137,50 @@ body {
       .row [class^="col-"] {
         width: 100% !important; } }
   .row .col-1-of-2 {
-    width: calc((100% - 6rem) / 2); }
+    width: calc((100% - 2vw) / 2); }
   .row .col-1-of-3 {
-    width: calc((100% - 2 * 6rem) / 3); }
+    width: calc((100% - 2 * 2vw) / 3); }
   .row .col-2-of-3 {
-    width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+    width: calc(2 * ((100% - 2 * 2vw) / 3) + 2vw); }
   .row .col-1-of-4 {
-    width: calc((100% - 3 * 6rem) / 4); }
+    width: calc((100% - 3 * 2vw) / 4); }
   .row .col-2-of-4 {
-    width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+    width: calc(2 * ((100% - 3 * 2vw) / 4) + 2vw); }
   .row .col-3-of-4 {
-    width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
+    width: calc(3 * ((100% - 3 * 2vw) / 4) + 2 * 2vw); }
 
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 52rem; }
+  height: 600px;
+  /*52rem*/
+  /*&__picture {
+        background-size: cover;
+        height: 23rem;
+        background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        
+        &--1 {
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), 
+            url(../img/nat-5.jpg);
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), 
+            url(../img/nat-6.jpg);
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), 
+            url(../img/nat-7.jpg);
+        }
+    }*/ }
   .card__side {
-    height: 52rem;
+    height: 600px;
     transition: all .8s ease;
     position: absolute;
     top: 0;
@@ -152,31 +194,12 @@ body {
     .card__side--front {
       background-color: white; }
     .card__side--back {
-      transform: rotateY(180deg); }
-      .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, green, green); }
-      .card__side--back-2 {
-        background-image: linear-gradient(to right bottom, green, green); }
-      .card__side--back-3 {
-        background-image: linear-gradient(to right bottom, green, green); }
+      transform: rotateY(180deg);
+      background-color: white; }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0); }
-  .card__picture {
-    background-size: cover;
-    height: 23rem;
-    background-blend-mode: screen;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px; }
-    .card__picture--1 {
-      background-image: linear-gradient(to right bottom, green, green), url(../img/nat-5.jpg); }
-    .card__picture--2 {
-      background-image: linear-gradient(to right bottom, green, green), url(../img/nat-6.jpg); }
-    .card__picture--3 {
-      background-image: linear-gradient(to right bottom, green, green), url(../img/nat-7.jpg); }
   .card__pics {
     max-width: 100%;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
@@ -217,8 +240,14 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;
+    width: 100%;
     text-align: center; }
+  .card__map {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    width: 100%; }
   .card__price-box {
     text-align: center;
     color: white;
@@ -252,8 +281,38 @@ body {
         left: 0;
         transform: translate(0);
         width: 100%;
-        padding: 7rem 4rem 4rem 4rem; }
+        /*padding: 7rem 4rem 4rem 4rem;*/ }
       .card__price-box {
         margin-bottom: 3rem; }
       .card__price-value {
         font-size: 4rem; } }
+
+.btn {
+  position: relative;
+  z-index: 99; }
+
+swiper-container {
+  width: 600px;
+  height: auto;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -20%); }
+  @media only screen and (max-width: 56.25em) {
+    swiper-container {
+      width: 550px; } }
+  @media only screen and (max-width: 37.5em) {
+    swiper-container {
+      width: 90%; } }
+
+swiper-slide {
+  background-position: center;
+  background-size: cover; }
+
+swiper-slide img {
+  display: block;
+  width: 100%; }
+
+.swipe-box-heading {
+  padding: 1em 0 1em 0;
+  width: 100vw; }

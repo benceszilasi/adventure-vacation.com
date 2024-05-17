@@ -4,12 +4,28 @@
         to bottom, 
         rgba($overlay-color, $overlay-transparency), 
         rgba($overlay-color, $overlay-transparency)), 
-        url(../img/Ptitigliano_Italy_medieval_town.png);
+        url(../img/pitigliano/cover.png);
     background-size: cover;
     background-position: center top;
     background-attachment: fixed;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     position: relative;
+
+    @include respond(tab-port){
+        background-image: linear-gradient(
+        to bottom, 
+        rgba($overlay-color, $overlay-transparency), 
+        rgba($overlay-color, $overlay-transparency)), 
+        url(../img/pitigliano/cover_tablet.png);
+    }
+
+    @include respond(phone){
+        background-image: linear-gradient(
+        to bottom, 
+        rgba($overlay-color, $overlay-transparency), 
+        rgba($overlay-color, $overlay-transparency)), 
+        url(../img/pitigliano/cover_phone.png);
+    }
 }
 
 .logo-box{

@@ -1,5 +1,5 @@
 .heading-h1{
-    color: #fff;
+    color: $color-white;
     position: absolute;
     top: 40%;
     left: 50%;
@@ -20,4 +20,12 @@
 
 .heading-h1-sub{
     display: block; /*block elements under each other*/
+}
+
+.swipe-box-heading-text {
+    color: $color-white;
+}
+
+.swipe-box-text {
+    color: $color-white;
 }
