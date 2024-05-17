@@ -70,6 +70,12 @@ body {
 .swipe-box-text {
   color: white; }
 
+.h2-main {
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  padding: 1em 0 1em 0; }
+
 .header {
   height: 80vh;
   background-image: linear-gradient(to bottom, rgba(100, 100, 100, 0.5), rgba(100, 100, 100, 0.5)), url(../img/pitigliano/cover.png);
@@ -108,6 +114,15 @@ body {
   background-color: grey;
   clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
   padding: 20em 0 0 0; }
+
+.section-destinations {
+  padding: 5em 0 5em 0;
+  text-align: center; }
+
+.videos {
+  display: inline-block;
+  width: 3em;
+  height: 2em; }
 
 .row {
   max-width: 114rem;
@@ -316,3 +331,42 @@ swiper-slide img {
 .swipe-box-heading {
   padding: 1em 0 1em 0;
   width: 100vw; }
+
+.destination-card {
+  display: inline-block;
+  width: 15em;
+  height: 23em;
+  margin: 2em;
+  background-color: #5c5c5c;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px #5c5c5c;
+  transition: all .5s; }
+  .destination-card:hover {
+    transform: scale(1.05) translateY(-1em);
+    box-shadow: 20px 20px 10px grey; }
+  @media only screen and (max-width: 75em) {
+    .destination-card {
+      margin: 1em;
+      width: 10em;
+      height: 15.5em; } }
+  @media only screen and (max-width: 56.25em) {
+    .destination-card {
+      margin: 1em;
+      width: 10em;
+      height: 15.5em; } }
+  @media only screen and (max-width: 37.5em) {
+    .destination-card {
+      margin: .7em;
+      width: 10em;
+      height: 15.5em; } }
+
+.destination-card-img {
+  height: 100%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: scale(1) translate(-50%, -50%);
+  transition: all 1s; }
+  .destination-card-img:hover {
+    transform: scale(1.05) translate(-45%, -50%); }
