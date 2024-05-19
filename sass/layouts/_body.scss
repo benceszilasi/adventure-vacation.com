@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
@@ -14,11 +18,11 @@ body {
     width: 100%;
 
     @include respond(tab-land){
-        padding: 20px;
+        padding: 0px;
     }
 
     @include respond(tab-port){
-        padding: 10px;
+        padding: 0px;
     }
 
     @include respond(phone){

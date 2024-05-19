@@ -1,0 +1,64 @@
+.swiper-box {
+    width: 90%;
+    overflow: hidden;
+    margin: auto;
+
+    @include respond(tab-land){
+        width: 900px;
+    }
+
+    @include respond(tab-port){
+        width: 100%;
+    }
+
+    @include respond(big-desktop) {
+        width: 1500px;
+    }
+}
+
+swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    --swiper-pagination-top: 640px;
+    --swiper-pagination-bullet-size: 10px;
+    --swiper-pagination-color: #ED1633;
+    /*--swiper-pagination-bullet-opacity: 0;*/
+    --swiper-pagination-bullet-inactive-color: #000;
+    --swiper-pagination-bullet-inactive-opacity: 0.4;
+    --swiper-pagination-bullet-horizontal-gap: 6px;
+
+    @include respond(tab-port){
+        --swiper-pagination-top: 0px; 
+        --swiper-pagination-bullet-inactive-opacity: 0.7;
+    }
+}
+
+swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 600px;
+    margin-top: 30px;
+
+    @include respond(tab-land){
+        width: 600px;
+    }
+
+    @include respond(tab-port){
+        width: 70%;
+    }
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+.swipe-card-heading {
+    padding-top: 40px;
+    padding-bottom: 10px;
+
+    @include respond(tab-port){
+        padding-top: 10px;
+    }
+}

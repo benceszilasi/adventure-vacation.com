@@ -1,0 +1,29 @@
+.to-top {
+    position: fixed;
+    bottom: 10px;
+    right: 40px;
+    z-index: 99;
+    width: 50px;
+    /*overflow: hidden;*/
+
+    @include respond(tab-land){
+        right: 10px;
+    }
+
+    @include respond(tab-port){
+        right: 10px;
+    }
+
+    @include respond(phone) {
+        right: 10px;
+        width: 40px;
+    }
+
+    @include respond(big-desktop){
+        right: 50px;
+    }
+}
+
+.to-top-img {
+    width: 100%;
+}

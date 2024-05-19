@@ -22,12 +22,13 @@
     display: block; /*block elements under each other*/
 }
 
-.swipe-box-heading-text {
-    color: $color-white;
+.swipe-card-heading-text {
+    color: black;
 }
 
-.swipe-box-text {
-    color: $color-white;
+.swipe-card-text {
+    color: black;
+    text-align: justify;
 }
 
 .h2-main {
@@ -36,3 +37,4 @@
     font-weight: 700;
     padding: 1em 0 1em 0;
 }
+

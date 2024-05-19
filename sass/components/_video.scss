@@ -1,0 +1,23 @@
+.video {
+    width: 540px; /*heiht*1,8*/
+    height: 300px;
+    margin: 10px;
+
+    @include respond(tab-land){
+        width: 400px; /*heiht*1,8*/
+        height: 222px;
+        margin: 5px;
+    }
+
+    @include respond(tab-port){
+        width: 350px; /*heiht*1,8*/
+        height: 194px;
+        margin: 5px;
+    }
+
+    @include respond(phone) {
+        width: 300px; /*heiht*1,8*/
+        height: 167px;
+        margin: 5px;
+    }
+}
