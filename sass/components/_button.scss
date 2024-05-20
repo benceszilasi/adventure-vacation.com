@@ -1,4 +1,36 @@
+.btn-box {
+    display: inline-block;
+    transition: all .3s;
+    &:hover {
+        transform: translateY(-4px);
+    }
+    &:active {
+        transform: translateY(0px);
+    }
+}
+
 .btn {
-    position: relative;
-    z-index: 99;
+    font-size: 1.2em;
+    width: 100%;
+    background-color: $color-primary;
+    color: $color-white;
+    font-weight: 1000;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 5px 5px 2px rgb(92, 92, 92);
+    transition: all .3s;
+
+    &:hover {
+        box-shadow: 8px 8px 4px grey;
+        background-color: $color-primary-dark;
+    }
+
+    &:active {
+        box-shadow: 3px 3px 1px rgb(71, 71, 71);
+    }
+
+    &--card {
+        font-size: 2em;
+    }
 }
