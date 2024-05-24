@@ -1,0 +1,125 @@
+.grid-container {
+    display: grid;
+    gap: $content-grid-gap;
+    height: $content-grid-height;
+    margin: auto;
+    width: $content-grid-width;    
+    
+  }
+  
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    /*margin: auto;*/
+    /*padding: 20px;*/
+    font-size: 30px;
+    position: relative;
+  }
+  
+  .item1 {
+    grid-area: 1 / 1 / span 1 / span 1;
+    width: $content-grid-width/5;
+    height: $content-grid-height/4;
+    overflow: hidden;
+  }
+  
+  .item2 {
+    grid-column: 2 / span 3;
+    grid-row: 1;
+    width: $content-grid-width*0.6+$content-grid-gap;
+    height: $content-grid-height/4;
+    overflow: hidden;
+  }
+  
+  .item3 {
+    grid-column: 5;
+    grid-row: 1 / span 2;
+    width: $content-grid-width/5;
+    height: $content-grid-height/2+$content-grid-gap;
+    overflow: hidden;
+  }
+
+  .item4 {
+    grid-area: 2 / 1 / span 2 / span 2; /*grid-row-start, grid-column-start, grid-row-end and the grid-column-end*/
+    width: $content-grid-width*0.4;
+    height: $content-grid-height/2+$content-grid-gap;
+    overflow: hidden;
+}
+  
+  .item5 {
+    grid-area: 2 / 3 / span 2 / span 1;
+    width: $content-grid-width/5;
+    height: $content-grid-height/2+$content-grid-gap;
+    overflow: hidden;
+  }
+  
+  .item6 {
+    grid-area: 2 / 4 / span 3 / span 1;
+    width: $content-grid-width/5;
+    height: $content-grid-height*0.75+2*$content-grid-gap;
+    overflow: hidden;
+  }
+
+  .item7 {
+    grid-area: 3 / 5 / span 2 / span 1;
+    width: $content-grid-width/5;
+    height: $content-grid-height/2+$content-grid-gap;
+    overflow: hidden;
+  }
+  
+  .item8 {
+    grid-area: 4 / 1 / span 1 / span 1;
+    width: $content-grid-width/5;
+    height: $content-grid-height/4;
+    overflow: hidden;
+  }
+  
+  .item9 {
+    grid-area: 4 / 2 / span 1 / span 2;
+    width: $content-grid-width*0.4;
+    height: $content-grid-height/4;
+    overflow: hidden;
+  }
+
+  /*.content-heading-box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    background: rgba(black, 0.6);
+    
+    &:hover {
+        background: rgba(black, 0.4);
+    }
+  }
+
+  .content-heading {
+    padding: 40px 10px;
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+    color: $color-white;
+  }*/
+
+.grid-img {
+    height: 100%;
+    transform: scale(1.1);
+    filter: brightness(75%);
+    transition: all .5s;
+
+    &:hover {
+        transform: scale(1);
+        filter: blur(1px) brightness(60%);
+    }
+}
+
+.grid-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $color-white;
+    padding: 0 10px;
+    font-size: 2.2rem;
+    font-weight: 700;
+}

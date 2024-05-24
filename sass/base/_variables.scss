@@ -11,7 +11,7 @@ $color-navigation: #333333;
 $color-white: white;
 $color-black: black;
 $color-grey-light-2: grey;
-$color-grey-light-1: grey;
+$color-grey-light-1: rgb(236, 236, 236);
 $color-secondary-light: green;
 $color-secondary-dark: green;
 
@@ -28,3 +28,15 @@ $gutter-horizontal: 2vw;
 $btn-shadow: 3px 3px 1px rgb(92, 92, 92);
 $btn-shadow-hover: 4px 4px 2px grey;
 $btn-shadow-active: 2px 2px 1px rgb(69, 69, 69);
+
+$section-padding: 1em 2em;
+$section-padding-normal: 1em 30em;
+$section-padding-polygon: 10em 2em 10em 2em;
+$section-polygon: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+
+$font-size: 20px;
+$font-weight: 400;
+
+$content-grid-width: 1200px;
+$content-grid-height: 800px;
+$content-grid-gap: 15px;
