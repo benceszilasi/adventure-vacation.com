@@ -78,7 +78,8 @@ body {
   font-size: 40px;
   letter-spacing: 2px;
   font-weight: 700;
-  padding: .5em 0 .5em 0; }
+  padding: .5em 0 1em 0;
+  text-align: center; }
 
 .h2-sub {
   padding: 1em 0 .5em 0; }
@@ -138,22 +139,75 @@ body {
   text-align: center; }
 
 .section-intro {
-  padding: 10em 2em 10em 2em;
+  padding-top: 10em;
+  padding-bottom: 10em;
   background-color: #ececec;
   clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
   /*transform: translateY(-7em);*/ }
 
+.intro {
+  margin: auto;
+  width: 1200px; }
+
 .section-activities {
-  padding: 1em 2em;
-  transform: translateY(-5em); }
+  padding: 1em 2em; }
 
 .section-stays {
-  padding: 10em 2em 10em 2em;
+  padding-top: 10em;
+  padding-bottom: 10em;
   background-color: #ececec;
   clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%); }
   @media only screen and (max-width: 56.25em) {
     .section-stays {
       padding: 20rem 0 10rem 0; } }
+
+.stays {
+  margin: auto;
+  width: 1200px; }
+
+.section-how-to-get-there {
+  padding-top: 1em;
+  padding-bottom: 1em; }
+
+.how-to-get-there {
+  margin: auto;
+  width: 1200px; }
+
+.section-where-to-eat {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/pitigliano/restaurant-cover.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+  color: white; }
+
+.where-to-eat {
+  padding-top: 10em;
+  padding-bottom: 40em; }
+
+.section-how-to-get-around {
+  padding-top: 1em;
+  padding-bottom: 1em; }
+
+.how-to-get-around {
+  margin: auto;
+  width: 1200px; }
+
+.section-local-costs {
+  padding-top: 1em;
+  padding-bottom: 1em; }
+
+.local-costs {
+  margin: auto;
+  width: 1200px; }
+
+.section-worth-visit {
+  padding-top: 1em;
+  padding-bottom: 1em; }
+
+.worth-visit {
+  margin: auto;
+  width: 1200px; }
 
 .audio {
   padding-left: 25em;
@@ -163,7 +217,7 @@ body {
 .row {
   max-width: 114rem;
   margin: 0 auto;
-  padding: 2em; }
+  /*padding: 2em;*/ }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
     @media only screen and (max-width: 56.25em) {
@@ -377,7 +431,8 @@ body {
   /*margin: auto;*/
   /*padding: 20px;*/
   font-size: 30px;
-  position: relative; }
+  position: relative;
+  border-radius: 5px; }
 
 .item1 {
   grid-area: 1 / 1 / span 1 / span 1;
@@ -436,35 +491,13 @@ body {
   height: 200px;
   overflow: hidden; }
 
-/*.content-heading-box {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    bottom: 0;
-    background: rgba(black, 0.6);
-    
-    &:hover {
-        background: rgba(black, 0.4);
-    }
-  }
-
-  .content-heading {
-    padding: 40px 10px;
-    font-size: 2.2rem;
-    font-weight: 700;
-    text-align: center;
-    color: $color-white;
-  }*/
-.grid-img {
+.grid-box__img {
   height: 100%;
   transform: scale(1.1);
-  filter: brightness(75%);
+  filter: brightness(60%);
   transition: all .5s; }
-  .grid-img:hover {
-    transform: scale(1);
-    filter: blur(1px) brightness(60%); }
 
-.grid-caption {
+.grid-box__caption {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -473,6 +506,10 @@ body {
   padding: 0 10px;
   font-size: 2.2rem;
   font-weight: 700; }
+
+.grid-box:hover .grid-box__img {
+  transform: scale(1);
+  filter: blur(1px) brightness(40%); }
 
 .card {
   perspective: 150rem;

@@ -19,25 +19,90 @@
 }
 
 .section-intro {
-    padding: $section-padding-polygon;
+    padding-top: 10em;
+    padding-bottom: 10em;
     background-color: $color-grey-light-1;
     clip-path: $section-polygon;
     /*transform: translateY(-7em);*/
 }
 
+.intro {
+    margin: auto;
+    width: 1200px;
+}
+
 .section-activities {
     padding: $section-padding;
-    transform: translateY(-5em);
 }
 
 .section-stays {
-    padding: $section-padding-polygon;
+    padding-top: 10em;
+    padding-bottom: 10em;
     background-color: $color-grey-light-1;
     clip-path: $section-polygon;
 
     @include respond(tab-port) {
         padding: 20rem 0 10rem 0;
     }
+}
+
+.stays {
+    margin: auto;
+    width: 1200px;
+}
+
+.section-how-to-get-there {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.how-to-get-there {
+    margin: auto;
+    width: 1200px;
+}
+
+.section-where-to-eat {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/pitigliano/restaurant-cover.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    clip-path: $section-polygon;
+    color: $color-white;
+}
+
+.where-to-eat {
+    padding-top: 10em;
+    padding-bottom: 40em;
+}
+
+.section-how-to-get-around {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.how-to-get-around {
+    margin: auto;
+    width: 1200px;
+}
+
+.section-local-costs {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.local-costs {
+    margin: auto;
+    width: 1200px;
+}
+
+.section-worth-visit {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.worth-visit {
+    margin: auto;
+    width: 1200px;
 }
 
 .audio{
