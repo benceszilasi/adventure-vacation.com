@@ -1,0 +1,23 @@
+.travel {
+    
+    &__options {
+        display: inline-block;
+        width: 700px;
+        padding: 0 2em 0 2em;
+        text-align: left;
+        font-size: $font-size;
+    }
+    
+    &__map {
+        display: inline-block;
+        height: 530px;
+        overflow: hidden;
+        padding: 0 2em 0 2em;
+        /*vertical-align: top;*/
+
+        &__container {
+            transform: translateY(-20%);
+        }
+    }
+
+}

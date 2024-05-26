@@ -1,0 +1,61 @@
+.checked {
+    color: $color-primary; /*orange;*/
+  }
+
+.food {
+    display: inline-block;
+    padding: 0 4em 0 4em;
+    text-align: left;
+    font-weight: 700;
+
+    &__restaurant {
+        /*display: inline-block;*/
+        padding: 1em;
+
+        &__link {
+            color: $color-white;
+            font-size: 22px;
+
+            &:hover {
+                color: $color-primary;
+            }
+        }
+
+        &__details {
+            padding: .5em 0 .5em 0;
+            font-size: $font-size;
+
+            &__row {
+                padding: .2em;
+            }
+        }
+    }
+
+    &__rating {
+        /*display: inline-block;*/
+        padding: 1em;
+
+        &__table {
+            text-align: left;
+            width: 250px;
+            height: 130px;
+            font-size: $font-size;
+        }
+
+        &__title {
+            padding-bottom: .5em;
+        }
+
+        &__logo {
+            height: 30px;
+            display: inline-block;
+            padding-right: 10px;
+        }
+
+        &__text {
+            display: inline-block;
+            font-size: 30px;
+            transform: translateY(-3px);
+        }
+    }
+}

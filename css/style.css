@@ -81,6 +81,10 @@ body {
   padding: .5em 0 1em 0;
   text-align: center; }
 
+.h3-main {
+  font-size: 30px;
+  padding: 1em 0 .7em 0; }
+
 .h2-sub {
   padding: 1em 0 .5em 0; }
 
@@ -88,9 +92,8 @@ body {
   font-size: 15px;
   text-align: center; }
 
-.answer {
-  padding-left: 1.2em;
-  font-size: 20px; }
+.link-text:hover {
+  color: #ED1633; }
 
 .header {
   height: 80vh;
@@ -143,11 +146,8 @@ body {
   padding-bottom: 10em;
   background-color: #ececec;
   clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+  /*text-align: center;*/
   /*transform: translateY(-7em);*/ }
-
-.intro {
-  margin: auto;
-  width: 1200px; }
 
 .section-activities {
   padding: 1em 2em; }
@@ -167,14 +167,15 @@ body {
 
 .section-how-to-get-there {
   padding-top: 1em;
-  padding-bottom: 1em; }
+  padding-bottom: 4em; }
 
 .how-to-get-there {
   margin: auto;
-  width: 1200px; }
+  width: 1200px;
+  text-align: center; }
 
 .section-where-to-eat {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/pitigliano/restaurant-cover.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../img/pitigliano/restaurant-cover.png);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -182,14 +183,16 @@ body {
   color: white; }
 
 .where-to-eat {
+  margin: auto;
   padding-top: 10em;
-  padding-bottom: 40em; }
+  padding-bottom: 10em;
+  text-align: center; }
 
-.section-how-to-get-around {
+.section-local-info {
   padding-top: 1em;
   padding-bottom: 1em; }
 
-.how-to-get-around {
+.local-info {
   margin: auto;
   width: 1200px; }
 
@@ -202,17 +205,15 @@ body {
   width: 1200px; }
 
 .section-worth-visit {
-  padding-top: 1em;
-  padding-bottom: 1em; }
+  padding-top: 10em;
+  padding-bottom: 10em;
+  background-color: #ececec;
+  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%); }
 
 .worth-visit {
   margin: auto;
-  width: 1200px; }
-
-.audio {
-  padding-left: 25em;
-  height: 0;
-  transform: translateY(-3em); }
+  width: 1200px;
+  text-align: center; }
 
 .row {
   max-width: 114rem;
@@ -511,6 +512,107 @@ body {
   transform: scale(1);
   filter: blur(1px) brightness(40%); }
 
+.checked {
+  color: #ED1633;
+  /*orange;*/ }
+
+.food {
+  display: inline-block;
+  padding: 0 4em 0 4em;
+  text-align: left;
+  font-weight: 700; }
+  .food__restaurant {
+    /*display: inline-block;*/
+    padding: 1em; }
+    .food__restaurant__link {
+      color: white;
+      font-size: 22px; }
+      .food__restaurant__link:hover {
+        color: #ED1633; }
+    .food__restaurant__details {
+      padding: .5em 0 .5em 0;
+      font-size: 20px; }
+      .food__restaurant__details__row {
+        padding: .2em; }
+  .food__rating {
+    /*display: inline-block;*/
+    padding: 1em; }
+    .food__rating__table {
+      text-align: left;
+      width: 250px;
+      height: 130px;
+      font-size: 20px; }
+    .food__rating__title {
+      padding-bottom: .5em; }
+    .food__rating__logo {
+      height: 30px;
+      display: inline-block;
+      padding-right: 10px; }
+    .food__rating__text {
+      display: inline-block;
+      font-size: 30px;
+      transform: translateY(-3px); }
+
+.travel__options {
+  display: inline-block;
+  width: 700px;
+  padding: 0 2em 0 2em;
+  text-align: left;
+  font-size: 20px; }
+
+.travel__map {
+  display: inline-block;
+  height: 530px;
+  overflow: hidden;
+  padding: 0 2em 0 2em;
+  /*vertical-align: top;*/ }
+  .travel__map__container {
+    transform: translateY(-20%); }
+
+.conclusion__title {
+  text-align: left;
+  padding-top: 0; }
+
+.conclusion__text {
+  display: inline-block;
+  text-align: justify;
+  width: 600px;
+  padding: 0 4em 0 4em;
+  font-size: 20px;
+  vertical-align: top; }
+
+.conclusion__img {
+  display: inline-block;
+  width: 400px;
+  object-fit: contain;
+  padding: 0 4em 0 4em; }
+  .conclusion__img__box {
+    width: 400px; }
+
+.intro {
+  margin: auto;
+  width: 1200px; }
+  .intro__text {
+    display: inline-block;
+    width: 610px;
+    padding-right: 20px;
+    text-align: left; }
+  .intro__video {
+    display: inline-block;
+    vertical-align: top; }
+
+.text-below {
+  text-align: left; }
+
+.audio {
+  padding-left: 25em;
+  height: 0;
+  transform: translateY(-3em); }
+
+.answer {
+  padding-left: 1.2em;
+  font-size: 20px; }
+
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
@@ -549,7 +651,7 @@ body {
     position: absolute;
     top: 14rem;
     right: 2rem;
-    width: 55%; }
+    width: 70%; }
     @media only screen and (max-width: 75em) {
       .card__heading {
         width: 65%;
@@ -562,7 +664,7 @@ body {
         width: 50%; } }
     @media only screen and (min-width: 112.5em) {
       .card__heading {
-        width: 50%; } }
+        width: 70%; } }
   .card__heading-span {
     padding: .5rem .5rem;
     -webkit-box-decoration-break: clone;
@@ -577,7 +679,7 @@ body {
       margin: 0 auto; }
       .card__details ul li {
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 20px;
         padding: .5rem; }
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid grey; }
@@ -631,11 +733,15 @@ body {
 
 .btn-box {
   display: inline-block;
+  padding: 15px;
   transition: all .3s; }
   .btn-box:hover {
     transform: translateY(-4px); }
   .btn-box:active {
     transform: translateY(0px); }
+
+.btn-link {
+  text-decoration: none; }
 
 .btn {
   font-size: 1.2em;
@@ -645,7 +751,6 @@ body {
   font-weight: 1000;
   padding: 10px;
   border-radius: 5px;
-  text-decoration: none;
   box-shadow: 5px 5px 2px #5c5c5c;
   transition: all .3s; }
   .btn:hover {
@@ -747,6 +852,12 @@ swiper-slide img {
   @media only screen and (max-width: 56.25em) {
     .swipe-card-heading {
       padding-top: 10px; } }
+
+.swipe-card-heading-text {
+  font-size: 25px; }
+
+.swipe-card-text {
+  font-size: 20px; }
 
 .video {
   width: 540px;

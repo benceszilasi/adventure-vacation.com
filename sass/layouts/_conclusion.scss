@@ -1,0 +1,27 @@
+.conclusion {
+
+    &__title {
+        text-align: left;
+        padding-top: 0;
+    }
+
+    &__text {
+        display: inline-block;
+        text-align: justify;
+        width: 600px;
+        padding: 0 4em 0 4em;
+        font-size: $font-size;
+        vertical-align: top;
+    }
+
+    &__img {
+        display: inline-block;
+        width: 400px;
+        object-fit: contain;
+        padding: 0 4em 0 4em;
+
+        &__box {
+            width: 400px;
+        }
+    }
+}

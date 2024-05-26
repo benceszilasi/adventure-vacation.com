@@ -39,6 +39,11 @@
     text-align: center;
 }
 
+.h3-main {
+    font-size: 30px;
+    padding: 1em 0 .7em 0;
+}
+
 .h2-sub {
     padding: 1em 0 .5em 0;
 }
@@ -48,7 +53,8 @@
     text-align: center;
 }
 
-.answer {
-    padding-left: 1.2em;
-    font-size: 20px;
+.link-text {
+    &:hover {
+        color: $color-primary;
+    }
 }

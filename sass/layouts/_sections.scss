@@ -23,12 +23,8 @@
     padding-bottom: 10em;
     background-color: $color-grey-light-1;
     clip-path: $section-polygon;
+    /*text-align: center;*/
     /*transform: translateY(-7em);*/
-}
-
-.intro {
-    margin: auto;
-    width: 1200px;
 }
 
 .section-activities {
@@ -53,16 +49,17 @@
 
 .section-how-to-get-there {
     padding-top: 1em;
-    padding-bottom: 1em;
+    padding-bottom: 4em;
 }
 
 .how-to-get-there {
     margin: auto;
     width: 1200px;
+    text-align: center;
 }
 
 .section-where-to-eat {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/pitigliano/restaurant-cover.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../img/pitigliano/restaurant-cover.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -71,16 +68,18 @@
 }
 
 .where-to-eat {
+    margin: auto;
     padding-top: 10em;
-    padding-bottom: 40em;
+    padding-bottom: 10em;
+    text-align: center;
 }
 
-.section-how-to-get-around {
+.section-local-info {
     padding-top: 1em;
     padding-bottom: 1em;
 }
 
-.how-to-get-around {
+.local-info {
     margin: auto;
     width: 1200px;
 }
@@ -96,18 +95,17 @@
 }
 
 .section-worth-visit {
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 10em;
+    padding-bottom: 10em;
+    background-color: $color-grey-light-1;
+    clip-path: $section-polygon;
 }
 
 .worth-visit {
     margin: auto;
     width: 1200px;
+    text-align: center;
 }
 
-.audio{
-    padding-left: 25em;
-    height: 0;
-    transform: translateY(-3em);
-}
+
 

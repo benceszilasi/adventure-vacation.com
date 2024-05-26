@@ -51,7 +51,7 @@
         position: absolute;
         top: 14rem;
         right: 2rem;
-        width: 55%;
+        width: 70%;
 
         @include respond(tab-land){
             width: 65%;
@@ -67,7 +67,7 @@
         }
         
         @include respond(big-desktop){
-            width: 50%;
+            width: 70%;
         }
     }
 
@@ -91,7 +91,7 @@
 
             li {
                 text-align: center;
-                font-size: 1.5rem;
+                font-size: $font-size;
                 padding: .5rem;
 
                 &:not(:last-child) {
